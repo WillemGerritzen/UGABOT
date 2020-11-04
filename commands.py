@@ -9,9 +9,7 @@ GUILD = os.environ['DISCORD_GUILD_PROD']
 
 @bot.command()
 async def ugabuga(ctx):
-    for channel in ctx.guild.channels:
-        if str(channel) == 'general':
-            await ctx.send(f'Get ready to RRRRRRRRUMBLE!!!')
+    await ctx.channel.send(f'Get ready to RRRRRRRRUMBLE!!!')
 
 
 @bot.event
